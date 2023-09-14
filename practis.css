@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+
+background-color: #f9f9f;
+
+padding: 15px 0;
+}
+.header_wrap{
+
+width: 80%;
+
+margin: auto;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+
+}
+nav{
+
+width: 50%;
+}
+nav ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: end;
+}
+nav ul li{
+    
+}
+nav ul li a{
+    
+color: #333;
+    
+text-decoration: none;
+    
+text-transform: uppercase;
+    
+margin-left: 50px;
+}
+.portfolio_section{
+
+padding: 50px 0px;
+
+background-color: #f9f9f9;
+}
+.wrapper{
+
+width: 80%;
+
+margin: auto;
+}
+.heading{
+
+text-align: center;
+
+margin-bottom: 50px;
+}
+.heading h2{font-size: 30px;}
+.heading p{font-size: 17px;}
+.portfolio_item{
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+}
+.dising{
+    overflow: hidden;
+    width: 32%;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 0;
+}
+.dising::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    width: 0%;
+    height: 100%
+    ;background-color:#15a4fa;;
+    opacity: .5;
+    transition: .4s all ease-in-out;
+    
+}
+
+.dising::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    width: 0%;
+    height: 100%
+    ;background-color:#15a4fa;
+    opacity: .5;
+    transition: .4s all ease-in-out;
+    
+}
+
+.dising:hover::before{
+    width: 50%;
+  
+}
+.dising:hover::after{
+    width: 50%;
+  
+}
+.dising img{
+    
+width: 100%;
+}
+
+.icon_list{
+
+position: absolute;
+
+left: 50%;
+
+top: 60%;
+
+transform: translate(-50%, -50%);
+
+display: flex;
+
+opacity: 0;
+
+transition: .5s all ease-in-out;
+
+z-index: 99;
+}
+.zoom a{
+
+color: #fff;
+}
+.zoom{
+    
+width: 40px;
+    
+height: 40px;
+    
+border: 1px solid #fff;
+    
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+    
+border-radius: 4px;
+}
+.link{
+    
+width: 40px;
+    
+height: 40px;
+    
+border: 1px solid #fff;
+    
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+    
+border-radius: 4px;
+    
+margin-left: 5px;
+}
+.link a{
+    
+color: #fff;
+}
+
+.dising:hover .icon_list{
+    opacity: 1;
+    top:50%;
+
+}
+
+.contact_us{
+    background-image: url("New/Strict1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    position: relative;
+    z-index: 0;
+}
+.wrapper_form{
+
+width: 30%;
+
+margin: auto;
+
+}
+.contact_us::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#2d3950;
+    opacity: .8;
+    z-index: -1;
+}
+
+
+.wrapper_form h2{color: #000;text-align: center;}
+.wrapper_form p{
+    
+color: #000;
+    
+text-align: center;
+    
+margin-left: 10px;
+}
+.wrapper_form form{
+
+margin-top: 50px;
+}
+.wrapper_form form input{
+    
+width: 100%;
+    
+background: transparent;
+    
+border: 1px solid #fff;
+    
+padding: 10px 0px 10px 10px;
+    
+margin-bottom: 20px;
+    
+border-radius: 3px;
+    
+color: #fff;
+}
+.wrapper_form form input[type="submit"]{
+    
+margin-bottom: 0;
+    
+color: #fff;
+    
+background: #00bcd4;
+    
+padding: 10px 15px;
+    
+border: none;
+    
+border-radius: 0px;
+}
+.wrapper_form form textarea{
+    
+width: 100%;
+    
+background: transparent;
+    
+border: 1px solid #fff;
+    
+padding: 10px 0px 10px 10px;
+    
+margin-bottom: 20px;
+    
+border-radius: 3px;
+    
+color: #fff;
+}
+.submit_part{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+}
+.chck_box input[type="checkbox"]{margin-bottom: 0;}
+.chck_box{
+    
+display: flex;
+    
+justify-content: space-between;
+    
+align-items: center;
+}
+.chck_box p{
+
+}
+.submit__btn{
+
+}
+.wrapper_form form input::placeholder{
+    color:#999;
+}
+.wrapper_form form textarea::placeholder{
+    color:#999;
+}
+.wrapper_form form input:focus, .wrapper_form form textarea:focus{
+    outline: none;
+    border-color:  #15a4fa;
+}
+.wrapper_form form input[type="submit"]:hover{
+    background-color:#08444c;
+}
+footer{
+
+padding: 30px 0px;
+}
+.footer_wrapper{
+
+width: 80%;
+
+margin: auto;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+}
+.copy{
+
+}
+.copy p{
+
+font-size: 14px;
+
+text-transform: capitalize;
+
+color: #999;
+}
+.social_icon{
+
+}
+.social_icon ul{
+    
+list-style: none;
+    
+display: flex;
+}
+.social_icon ul li{
+    
+width: 30px;
+    
+height: 30px;
+    
+background-color:#15a4fa;
+    
+margin-left: 10px;
+    
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+border: 1px solid #15a4fa;
+border-radius: 3px;
+}
+.social_icon ul li a{
+    
+color: #fff;
+}
+.social_icon ul li:hover{
+    background-color: #fff;
+    border: 1px solid #15a4fa;
+}
+.social_icon ul li a:hover{
+    color: #15a4fa;
+}
+.banner{
+    background-image: url('New/bannert.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    position: relative;
+}
+.banner_contain{
+
+position: absolute;
+
+width: 400px;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+text-align: center;
+}
+.banner_contain h1{
+
+color: #fff;
+
+font-size: 50px;
+
+font-weight: 500;
+
+/* margin: 30px 0; */
+
+line-height: 70px;
+}
+.banner_contain span{
+
+display: block;
+
+width: 100%;
+
+height: 2px;
+
+background: #03A9F4;
+}
+.banner_contain p{
+
+color: #fff;
+
+margin: 30px 0;
+}
+.banner_contain button{
+
+background: transparent;
+
+color: #ffff;
+
+border: none;
+
+border: 1px solid #03A9F4;
+
+text-transform: capitalize;
+
+padding: 8px 10px;
+
+font-size: 15px;
+
+border-radius: 4px;
+transition: .4s all ease-in-out;
+cursor: pointer;
+}
+.banner_contain button:Hover{
+    background-color: #15a4fa;
+}
+.simple_deasign{
+
+background-color: #f9f9f9;
+
+padding: 50px 0;
+}
+.simple_wraper{
+
+width: 80%;
+
+margin: auto;
+
+text-align: center;
+}
+.simple_wraper h2{
+
+margin-bottom: 15px;
+
+font-weight: 500;
+}
+.simple_wraper p{
+
+font-size: 14px;
+}
+
+.feature{
+
+padding: 70px 0;
+}
+.feature_wrapper{
+
+width: 80%;
+
+margin: auto;
+
+display: flex;
+
+justify-content: space-between;
+}
+.feature_item{
+
+width: 30%;
+}
+.icon_box{
+
+width: 40px;
+
+height: 40px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+1,48baff+47,5fc3ff+50,5fc3ff+100 */
+background: linear-gradient(to right,  #48baff 1%,#48baff 47%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: auto;
+
+/* margin-bottom: 30px; */
+}
+
+.feature_item h3{
+
+text-align: center;
+
+margin: 15px 0;
+}
+.feature_item p{
+
+text-align: center;
+}
